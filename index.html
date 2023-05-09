@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Opleidingen</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f5f5f5;
+		}
+		
+		h1 {
+			text-align: center;
+			color: #333;
+		}
+		
+		form {
+			margin-top: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		
+		label {
+			font-size: 1.2em;
+			color: #333;
+			margin-bottom: 10px;
+		}
+		
+		select {
+			font-size: 1.1em;
+			padding: 5px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			width: 200px;
+			margin-bottom: 20px;
+		}
+		
+		#opleidingen {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		
+		ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			margin-bottom: 30px;
+			width: 300px;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+			transition: all 0.3s ease;
+		}
+		
+		li {
+			padding: 10px;
+			border-bottom: 1px solid #ccc;
+			color: #333;
+		}
+		
+		li:last-child {
+			border-bottom: none;
+		}
+		
+		li:hover {
+			background-color: #f5f5f5;
+			cursor: pointer;
+		}
+		
+		h2 {
+			font-size: 1.2em;
+			color: #333;
+			margin-top: 50px;
+			margin-bottom: 20px;
+			text-align: center;
+			width: 100%;
+		}
+		
+		p {
+			font-size: 1.1em;
+			color: #333;
+			padding: 10px;
+			margin: 0;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+		}
+	</style>
+</head>
+<body>
+	<h1>Opleidingen</h1>
+	
+	<form>
+		<label for="interests">Selecteer een categorie:</label>
+		<select id="interests" name="interests">
+			<option value="ict">ICT</option>
+			<option value="accountancy">Accountancy</option>
+			<option value="softwaredevelopment">Ad Software Development</option>
+			<option value="archeologie">Archeologie</option>
+		</select>
+	</form>
+	
+	<div id="opleidingen">
+		<ul id="ict">
+			<li>Informatica</li>
+			<p>Een opleiding waarin je leert hoe je software en computersystemen ontwikkelt en beheert.</p>
+			<li>Bedrijfskundige Informatica</li>
+			<p>Een opleiding waarin je leert hoe je informatie- en communicatietechnologie kunt inzetten om bedrijfsprocessen te optimaliseren.</p>
+</ul>
+
+	<ul id="accountancy">
+		<li>Accountancy</li>
+		<p>Een opleiding waarin je leert hoe je financiële administraties voert en jaarrekeningen opstelt.</p>
+		<li>Finance & Control</li>
+		<p>Een opleiding waarin je leert hoe je financiële vraagstukken van bedrijven kunt oplossen en adviseren over investeringen en financiering.</p>
+	</ul>
+	
+	<ul id="softwaredevelopment">
+		<li>Software Engineering</li>
+		<p>Een opleiding waarin je leert hoe je software kunt ontwerpen, bouwen en testen.</p>
+		<li>Game Development</li>
+		<p>Een opleiding waarin je leert hoe je games kunt ontwerpen en ontwikkelen voor diverse platformen zoals pc, console of mobiel.</p>
+	</ul>
+	
+	<ul id="archeologie">
+		<li>Archeologie</li>
+		<p>Een opleiding waarin je leert over de geschiedenis en cultuur van verschillende samenlevingen door archeologisch onderzoek te doen.</p>
+		<li>Cultureel Erfgoed</li>
+		<p>Een opleiding waarin je leert hoe je cultureel erfgoed kunt onderzoeken, documenteren, behouden en presenteren.</p>
+	</ul>
+</div>
+
+<script>
+	const interests = document.getElementById('interests');
+	const opleidingen = document.querySelectorAll('ul');
+	
+	interests.addEventListener('change', function() {
+		for (let i = 0; i < opleidingen.length; i++) {
+			if (opleidingen[i].id === interests.value) {
+				opleidingen[i].style.display = 'block';
+			} else {
+				opleidingen[i].style.display = 'none';
+			}
+		}
+	});
+</script>
+
+
+
