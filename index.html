@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Opleidingen</title>
+	<title>Studie keuze maken</title>
+	<link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/SLAMNOTH/BrianGPT/main/favicon.ico">
 	<style>
 		body {
 			font-family: Arial, sans-serif;
-			background-color: #f5f5f5;
+			background-color: #313131;
 		}
 		
 		h1 {
 			text-align: center;
-			color: #333;
+			color: #ffffff;
 		}
 		
 		form {
@@ -22,7 +23,7 @@
 		
 		label {
 			font-size: 1.2em;
-			color: #333;
+			color: #b1b1b1;
 			margin-bottom: 10px;
 		}
 		
@@ -31,7 +32,7 @@
 			padding: 5px;
 			border: 1px solid #ccc;
 			border-radius: 5px;
-			width: 200px;
+			width: 500px;
 			margin-bottom: 20px;
 		}
 		
@@ -46,7 +47,7 @@
 			padding: 0;
 			margin: 0;
 			margin-bottom: 30px;
-			width: 300px;
+			width: 700px;
 			background-color: #fff;
 			border: 1px solid #ccc;
 			border-radius: 5px;
@@ -77,6 +78,15 @@
 			text-align: center;
 			width: 100%;
 		}
+
+		h3 {
+			font-size: 1.2em;
+			color: #333;
+			margin-top: 50px;
+			margin-bottom: 20px;
+			text-align: center;
+			width: 100%;
+		}
 		
 		p {
 			font-size: 1.1em;
@@ -88,48 +98,159 @@
 			border-radius: 5px;
 			box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 		}
+
+		button {
+			display: block;
+			width: 650px;
+			margin: 0 auto;
+			margin-top: 10px;
+			margin-bottom: 5px;
+			padding: 10px;
+			font-size: 18px;
+			font-weight: bold;
+			border-radius: 5px;
+			background: rgb(1,156,41);
+			background: linear-gradient(130deg, rgba(1,156,41,1) 57%, rgba(134,133,133,1) 100%); 
+			color: #fff;
+			border: none;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		
+		button:hover {
+			background-color: #66ad69;
+		}
 	</style>
 </head>
 <body>
+	<div style="position:relative;">
+		<img src="https://i.imgur.com/RkvsK0B.png" alt="Banner Image" style="width:100%; height:491px;">
+		<div style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); text-align:center; color:#fff; font-size:76px; font-weight:bold;">
+		  <h3><span style='color:#63FFA2;'>S</span><span style='color:#5EF699;'>t</span><span style='color:#5AED91;'>u</span><span style='color:#56E488;'>d</span><span style='color:#52DC80;'>i</span><span style='color:#4ED377;'>e</span><span style='color:#4ACA6F;'>k</span><span style='color:#46C266;'>e</span><span style='color:#42B95E;'>u</span><span style='color:#3EB055;'>z</span><span style='color:#3AA74D;'>e</span> <span style='color:#32963C;'>m</span><span style='color:#2E8D33;'>a</span><span style='color:#2A852B;'>k</span><span style='color:#267C22;'>e</span><span style='color:#22731A;'>n</span></h3>
+		</div>
+	  </div>
+	  
 	<h1>Opleidingen</h1>
 	
 	<form>
 		<label for="interests">Selecteer een categorie:</label>
 		<select id="interests" name="interests">
-			<option value="ict">ICT</option>
-			<option value="accountancy">Accountancy</option>
-			<option value="softwaredevelopment">Ad Software Development</option>
+			<option value="hulp">Gratis studiehulp testen</option>
+			<option value="it">IT</option>
+			<option value="accountancy">Economie</option>
+			<option value="softwaredevelopment">Software Development</option>
 			<option value="archeologie">Archeologie</option>
 		</select>
 	</form>
 	
 	<div id="opleidingen">
-		<ul id="ict">
-			<li>Informatica</li>
-			<p>Een opleiding waarin je leert hoe je software en computersystemen ontwikkelt en beheert.</p>
-			<li>Bedrijfskundige Informatica</li>
-			<p>Een opleiding waarin je leert hoe je informatie- en communicatietechnologie kunt inzetten om bedrijfsprocessen te optimaliseren.</p>
-</ul>
+
+		<ul id="hulp">
+
+			<b><li>Maak de gratis studiekeuze test</li></b>
+			<p>Doe gratis de Studiekeuzetest!
+			<button onclick="window.location.href = 'https://icares.com/tests/start/education';">Naar de test</button>
+			</p>
+
+			<b><li>Maak de gratis persoonlijkheidstest</li></b>
+			<p>Het duurt minder dan 12 minuten. 
+			<button onclick="window.location.href = 'https://www.16personalities.com/nl/persoonlijkheidstest';">Naar de test</button>
+			</p>
+
+
+			
+		</ul>
+
+
+
+		<ul id="it">
+
+			<b><li>HBO-ICT - Saxion Enschede en Deventer</li></b>
+			<p>ICT is niet meer weg te denken uit organisaties én ons leven. De skills die hiervoor benodigd zijn, zijn erg gevarieerd van hele technische tot bedrijfskundige en/of een combinatie daarvan. Het werkveld gaat over het bouwen van software of het beheren én beveiligen van computernetwerken. Meld je uiterlijk 15 augustus aan.
+			<button onclick="window.location.href = 'https://www.saxion.nl/opleidingen/voltijd/bachelor/hbo-ict';">Bekijk opleiding</button></p>
+
+			<b><li>HBO-ICT - Windesheim Zwolle</li></b>
+			<p>Informatie, communicatie en technologie is waar het om draait bij HBO-ICT in Zwolle. Er is in deze opleiding volop ruimte om je breed te oriënteren, waarna je dieper op een door jou gekozen interessegebied in kunt gaan.
+			<button onclick="window.location.href = 'https://www.windesheim.nl/opleidingen/voltijd/bachelor/hbo-ict-zwolle';">Bekijk opleiding</button></p>
+
+
+			<b><li>Informatica - Saxion Enschede</li></b>
+			<p>Een opleiding waarin je leert hoe je software en computersystemen ontwikkelt en beheert. Meld je uiterlijk 15 augustus aan.
+			<button onclick="window.location.href = 'https://www.saxion.nl/opleidingen/voltijd/bachelor/technische-informatica';">Bekijk opleiding</button>
+			</p>
+			
+
+			<b><li>Master ICT (English taught)- Saxion Enschede en Deventer</li></b>
+			<p>The field of software engineering is always evolving. Innovative and disruptive technologies call for people like you to take them to a next level. How do you design software for systems-of-systems? Meld je uiterlijk 15 augustus aan.
+			<button onclick="window.location.href = 'https://www.saxion.nl/opleidingen/en/fulltime/master/ict-software-engineering';">Bekijk opleiding</button>
+			</p>
+			
+			<b><li>Game Development - Saxion Enschede</li></b>
+			<p>Een opleiding waarin je leert hoe je games kunt ontwerpen en ontwikkelen voor diverse platformen zoals pc, console of mobiel. Meld je uiterlijk 15 augustus aan.
+			<button onclick="window.location.href = 'https://www.saxion.nl/opleidingen/en/fulltime/bachelor/creative-media-and-game-technologies';">Bekijk opleiding</button>
+			</p>
+
+			<b><li>Software Engineering - Saxion Enschede</li></b>
+		<p>Een opleiding waarin je leert hoe je software kunt ontwerpen, bouwen en testen. Meld je uiterlijk 15 augustus aan.
+		<button onclick="window.location.href = 'https://www.saxion.nl/opleidingen/en/fulltime/master/ict-software-engineering';">Bekijk opleiding</button>
+		</p>
+
+			</ul>
 
 	<ul id="accountancy">
-		<li>Accountancy</li>
-		<p>Een opleiding waarin je leert hoe je financiële administraties voert en jaarrekeningen opstelt.</p>
-		<li>Finance & Control</li>
-		<p>Een opleiding waarin je leert hoe je financiële vraagstukken van bedrijven kunt oplossen en adviseren over investeringen en financiering.</p>
+		<b><li>Commerciële Economie - Saxion Enschede en Deventer</li></b>
+		<p>Wil jij een carrière in een commerciële en creatieve functie in de marketing of sales? Dan ben je bij hbo Commerciële Economie aan het juiste adres! Hier leer je hoe je producten en diensten in de markt zet, promoot en verkoopt met offline én online kanalen. Meld je uiterlijk 15 augustus aan.
+		<button onclick="window.location.href = 'https://www.saxion.nl/opleidingen/voltijd/bachelor/commerciele-economie';">Bekijk opleiding</button>
+		</p>
+
+
+		<b><li>Accountancy - Saxion Enschede</li></b>
+		<p>Een opleiding waarin je leert hoe je financiële administraties voert en jaarrekeningen opstelt.
+		<button onclick="window.location.href = 'https://www.saxion.nl/opleidingen/voltijd/bachelor/accountancy';">Bekijk opleiding</button>
+		</p>
+		
+
+		<b><li>Finance & Control - Saxion Enschede</li></b>
+		<p>Een opleiding waarin je leert hoe je financiële vraagstukken van bedrijven kunt oplossen en adviseren over investeringen en financiering. Meld je uiterlijk 15 augustus aan.
+		<button onclick="window.location.href = 'https://www.saxion.nl/opleidingen/voltijd/bachelor/accountancy';">Bekijk opleiding</button>
+		</p>
+
+		<b><li>Finance, Tax & Advice - Saxion Enschede</li></b>
+		<p>De blauwe envelop, BTW, belastingteruggave. Termen waar je ongetwijfeld bekend mee bent. Is dat alleen de wereld van de 'belastingen'? Zeker niet! Wanneer je kiest voor een beroep in belastingen, kies je voor een heel veelzijdige en dynamische carrière. Waarbij jij de financieel adviseur bent waar de ondernemer op vertrouwt. Meld je uiterlijk 15 augustus aan.
+		<button onclick="window.location.href = 'https://www.saxion.nl/opleidingen/voltijd/bachelor/finance-tax-and-advice';">Bekijk opleiding</button>
+		</p>
+
+
+		<b><li>Bedrijfskunde - Saxion Enschede</li></b>
+		<p>Hoe haal je nu het beste uit een bedrijf en uit de mensen die er werken? Daar heb je kennis voor nodig. Kennis over de organisatie van een bedrijf, hoe teams in elkaar steken en welke ontwikkelingen er spelen in de markt. Maak jij een bedrijf toekomstproof? Je leert het bij Bedrijfskunde hbo! Meld je uiterlijk 15 augustus aan.
+		<button onclick="window.location.href = 'https://www.saxion.nl/opleidingen/voltijd/bachelor/bedrijfskunde';">Bekijk opleiding</button>
+		</p>
+		
+		<b><li>Bestuurskunde / Overheidsmanagement</li></b>
+		<p>Hoe bestuur je eigenlijk een stad of gemeente en hoe vergroot je bijvoorbeeld de leefbaarheid en sociale veiligheid in een wijk? In vier jaar tijd leer je bij de studie Bestuurskunde/Overheidsmanagement antwoord te geven op deze vragen. Meld je uiterlijk 15 augustus aan.
+		<button onclick="window.location.href = 'https://www.saxion.nl/opleidingen/voltijd/bachelor/bestuurskunde-overheidsmanagement';">Bekijk opleiding</button>
+		</p>
+		
 	</ul>
 	
 	<ul id="softwaredevelopment">
-		<li>Software Engineering</li>
-		<p>Een opleiding waarin je leert hoe je software kunt ontwerpen, bouwen en testen.</p>
-		<li>Game Development</li>
-		<p>Een opleiding waarin je leert hoe je games kunt ontwerpen en ontwikkelen voor diverse platformen zoals pc, console of mobiel.</p>
+		<b><li>Software Engineering - Saxion Enschede</li></b>
+		<p>Een opleiding waarin je leert hoe je software kunt ontwerpen, bouwen en testen. Meld je uiterlijk 15 augustus aan.
+		<button onclick="window.location.href = 'https://www.saxion.nl/opleidingen/en/fulltime/master/ict-software-engineering';">Bekijk opleiding</button>
+		</p>
+
+		<b><li>Game Development - Saxion Enschede</li></b>
+		<p>Een opleiding waarin je leert hoe je games kunt ontwerpen en ontwikkelen voor diverse platformen zoals pc, console of mobiel. Meld je uiterlijk 15 augustus aan.
+		<button onclick="window.location.href = 'https://www.saxion.nl/opleidingen/en/fulltime/bachelor/creative-media-and-game-technologies';">Bekijk opleiding</button>
+		</p>
 	</ul>
 	
 	<ul id="archeologie">
-		<li>Archeologie</li>
-		<p>Een opleiding waarin je leert over de geschiedenis en cultuur van verschillende samenlevingen door archeologisch onderzoek te doen.</p>
-		<li>Cultureel Erfgoed</li>
-		<p>Een opleiding waarin je leert hoe je cultureel erfgoed kunt onderzoeken, documenteren, behouden en presenteren.</p>
+
+		<b><li>Archeologie - Saxion Deventer</li></b>
+		<p>Een opleiding waarin je leert over de geschiedenis en cultuur van verschillende samenlevingen door archeologisch onderzoek te doen.
+		<button onclick="window.location.href = 'https://www.saxion.nl/opleidingen/voltijd/bachelor/archeologie';">Bekijk opleiding</button>
+		</p>
 	</ul>
 </div>
 
@@ -147,6 +268,3 @@
 		}
 	});
 </script>
-
-
-
